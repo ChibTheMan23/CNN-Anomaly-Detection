@@ -1,17 +1,17 @@
 # Anomaly Detection in Website Traffic Using Deep Learning
 
 ## 📌 Project Overview
-This project enhances Mixtiles' website traffic anomaly detection using DeepAnT, a Convolutional Neural Network (CNN)-based approach designed for time series anomaly detection. DeepAnT operates by predicting future values in a time series and identifying anomalies when significant deviations occur between the predicted and actual values. Traditional threshold-based methods often misclassify normal traffic fluctuations as anomalies or fail to catch actual issues. By leveraging deep learning, I aim to reduce false positives and false negatives, enhancing Mixtiles' ability to detect meaningful deviations.
+This project enhances website traffic anomaly detection using DeepAnT, a Convolutional Neural Network (CNN)-based approach designed for time series anomaly detection. DeepAnT operates by predicting future values in a time series and identifying anomalies when significant deviations occur between the predicted and actual values. Traditional threshold-based methods often misclassify normal traffic fluctuations as anomalies or fail to catch actual issues. By leveraging deep learning, I aim to reduce false positives and false negatives, enhancing the ability to detect meaningful deviations.
 
 ### 🔍 Key Features
 - DeepAnT-Based Detection: Uses a CNN model trained on historical traffic data to predict future values.
 - Anomaly Detection Mechanism: Flags anomalies based on deviations between predicted and actual values.
 - Expert-Labeled Anomalies: Compared predictions against anomalies labeled by a domain expert.
-- Comparative Evaluation: Benchmarks CNN performance against Mixtiles' existing model.
+- Comparative Evaluation: Benchmarks CNN performance against the existing model.
 - Attention Mechanism Testing: Explored Bahdanau Attention and Self-Attention for potential improvements.
 
 ## 📈 Results Summary
-- The CNN-based model significantly outperformed Mixtiles' threshold-based method in anomaly detection.
+- The CNN-based model significantly outperformed the threshold-based method in anomaly detection.
 - **F2 Score Comparison**:
   - **Company Model**: 0.29
   - **CNN Model**: 0.62
