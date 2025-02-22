@@ -36,7 +36,7 @@ To assess real-world impact, we compared the CNN model’s anomaly detection wit
 - **False Negatives (FN):** CNN reduces missed anomalies, catching more critical events.
 - **False Positives (FP):** CNN significantly reduces unnecessary anomaly alerts.
 
-[Confusin Metrices](https://github.com/ChibTheMan23/CNN-Anomaly-Detection/blob/81c7f338bc6d9f38479fe6f34d0865fa099acccf/figures/Confusion%20Metrices.png)
+![Confusion Metrices](https://github.com/ChibTheMan23/CNN-Anomaly-Detection/blob/81c7f338bc6d9f38479fe6f34d0865fa099acccf/figures/Confusion%20Metrices.png)
 
 ## 🛠️ Attention Mechanism: Hypothesis & Results
 
