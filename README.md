@@ -1,3 +1,30 @@
+# 🚀 Anomaly Detection in Mixtiles' Traffic Using Deep Learning
+
+## 📌 Project Overview
+This project enhances Mixtiles' website traffic anomaly detection using a Convolutional Neural Network (CNN)-based model inspired by DeepAnT. Traditional threshold-based methods often misclassify normal traffic fluctuations as anomalies or fail to catch actual issues. By leveraging deep learning, we aim to reduce false positives and negatives, improving Mixtiles' ability to detect meaningful deviations.
+
+### 🔍 Key Features
+- 📈 **Data-Driven Anomaly Detection**: Uses a CNN model trained on historical traffic data.
+- 🏷️ **Expert-Labeled Anomalies**: Compared predictions against anomalies labeled by a domain expert.
+- 📊 **Comparative Evaluation**: Benchmarks CNN performance against Mixtiles' existing model.
+- 🎯 **Attention Mechanism Testing**: Explored Bahdanau Attention and Self-Attention for potential improvements.
+
+## 📊 Results Summary
+- The CNN-based model significantly outperformed Mixtiles' threshold-based method in anomaly detection.
+- **F2 Score Comparison**:
+  - 🏢 **Company Model**: 0.62
+  - 🧠 **CNN Model**: 0.77
+  - 🔍 **CNN + Attention Model**: 0.58 (Did not improve results)
+
+### 📊 Confusion Matrix Insights:
+- ✅ CNN model **reduces false positives and false negatives** compared to the company model.
+- ❌ Attention models **failed to improve performance**, likely due to periodic patterns in website traffic.
+
+## 📂 File Structure
+- 📄 `README.md` – This document.
+-
+
+
 ## 📊 Visual Results
 
 ### 📌 Time Series Predictions
