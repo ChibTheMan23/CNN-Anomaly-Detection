@@ -1,36 +1,31 @@
 # Anomaly Detection in Website Traffic Using Deep Learning
 
 ## 📌 Project Overview
-This project enhances  website traffic anomaly detection using a Convolutional Neural Network (CNN)-based model inspired by DeepAnT. Traditional threshold-based methods often misclassify normal traffic fluctuations as anomalies or fail to catch actual issues. By leveraging deep learning, we aim to reduce false positives and negatives, improving the ability to detect meaningful deviations.
+This project enhances Mixtiles' website traffic anomaly detection using DeepAnT, a Convolutional Neural Network (CNN)-based approach designed for time series anomaly detection. DeepAnT operates by predicting future values in a time series and identifying anomalies when significant deviations occur between the predicted and actual values. Traditional threshold-based methods often misclassify normal traffic fluctuations as anomalies or fail to catch actual issues. By leveraging deep learning, we aim to reduce false positives and false negatives, enhancing Mixtiles' ability to detect meaningful deviations.
 
 ### 🔍 Key Features
-- **Data-Driven Anomaly Detection**: Uses a CNN model trained on historical traffic data.
-- **Expert-Labeled Anomalies**: Compared predictions against anomalies labeled by a domain expert.
-- **Comparative Evaluation**: Benchmarks CNN performance against the existing model.
-- **Attention Mechanism Testing**: Explored Bahdanau Attention and Self-Attention for potential improvements.
+- DeepAnT-Based Detection: Uses a CNN model trained on historical traffic data to predict future values.
+- Anomaly Detection Mechanism: Flags anomalies based on deviations between predicted and actual values.
+- Expert-Labeled Anomalies: Compared predictions against anomalies labeled by a domain expert.
+- Comparative Evaluation: Benchmarks CNN performance against Mixtiles' existing model.
+- Attention Mechanism Testing: Explored Bahdanau Attention and Self-Attention for potential improvements.
 
-## 📊 Results Summary
+## 📈 Results Summary
 - The CNN-based model significantly outperformed the current threshold-based method in anomaly detection.
 - **F2 Score Comparison**:
   - **Company Model**: 0.29
   - **CNN Model**: 0.58
   - **CNN + Attention Model**: 0.53 (Did not improve results)
 
-### 📊 Confusion Matrix Insights:
 - CNN model **reduces false positives and false negatives** compared to the company model.
 - Attention models **failed to improve performance**, likely due to periodic patterns in website traffic.
-
-## 📂 File Structure
-- 📄 `README.md` – This document.
--
-
 
 ## 📊 Visual Results
 
 ### Time Series Predictions
 The figure below showcases the model’s predicted traffic values against actual traffic counts. The CNN-based DeepAnT model successfully captures periodic trends in website visits but struggles with sharp anomalies. This is not necessarily a weakness—true anomalies are, by definition, rare and unpredictable. If the model were to predict them too accurately, it might be overfitting to noise rather than detecting meaningful deviations.
 
-**📷 Placeholder: Insert Time Series Prediction Plot Here**
+
 
 ### 📊 Confusion Matrices
 To assess real-world impact, we compared the CNN model’s anomaly detection with the existing rule-based method. The confusion matrices highlight key improvements:
