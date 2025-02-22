@@ -43,14 +43,12 @@ To assess real-world impact, we compared the CNN model’s anomaly detection wit
 Given the success of attention mechanisms in sequential data tasks, we tested whether they could enhance anomaly detection. The goal was to help the model focus on critical time steps rather than treating all past data equally. We implemented **Bahdanau Attention** and **Self-Attention**.
 However, results indicate that attention mechanisms **did not improve anomaly detection performance**. Website traffic follows strong **periodic trends** (daily and weekly cycles), which CNNs already capture effectively. Attention layers excel in cases where anomalies depend on long-range dependencies (e.g., fraud detection), but in this dataset, they **added unnecessary complexity**, leading to overfitting.
 
-**📷 Placeholder: Insert Model Loss Curves for CNN and CNN + Attention Here**
+![Loss](https://github.com/ChibTheMan23/CNN-Anomaly-Detection/blob/1de7824777b571f976492b287e099d22dfe230f9/figures/Loss%20CNN%20Models.png)
 
 ## 🚀 Future Work
 To further improve anomaly detection, future research can explore:
 
 - **Anomaly-Aware Training**: Exclude anomalies during training to improve robustness.
-- **External Features**: Incorporate marketing campaigns, server issues, and promotions as inputs.
-- **Hybrid Models**: Combine CNNs with LSTMs or Transformers for improved long-range pattern recognition.
 - **Threshold Optimization**: Fine-tune anomaly detection thresholds to better balance precision and recall.
 - **Data Augmentation**: Generate synthetic anomalies to improve model generalization.
 
@@ -61,7 +59,6 @@ This study demonstrates that a **CNN-based DeepAnT model significantly outperfor
 ---
 
 ## 🔗 References
-(References remain unchanged from the previous section)
 1. M. Munir, S. A. Siddiqui, A. Dengel and S. Ahmed, "DeepAnT: A Deep Learning Approach for Unsupervised Anomaly Detection in Time Series," in IEEE Access, vol. 7, pp. 1991-2005, 2019, doi: 10.1109/ACCESS.2018.2886457.
 2. Andrew A. Cook, Goksel Misirli, and Zhong Fan. Anomaly detection for IoT time-series data: A survey. IEEE Internet of Things Journal, 7(7):6481–6494, 2020.
 3. Bowen Zhao, Huanlai Xing, Xinhan Wang, Fuhong Song, and Zhiwen Xiao. Rethinking attention mechanism in time series classification. Retrieved from: https://arxiv.org/abs/2207.07564.
