@@ -25,8 +25,8 @@ This project enhances Mixtiles' website traffic anomaly detection using DeepAnT,
 ### Time Series Predictions
 The figure below showcases the model’s predicted traffic values against actual traffic counts. The CNN-based DeepAnT model successfully captures periodic trends in website visits but struggles with sharp anomalies. This is not necessarily a weakness—true anomalies are, by definition, rare and unpredictable. If the model were to predict them too accurately, it might be overfitting to noise rather than detecting meaningful deviations.
 
-![alt text](figures/Deep-AnT Predictions.png)
-![alt text]([http://url/to/img.png](https://github.com/ChibTheMan23/CNN-Anomaly-Detection/blob/main/figures/Deep-AnT%20Predictions.png))
+![Model's Prediction](figures/Deep-AnT Predictions.png)
+
 
 ### 📊 Confusion Matrices
 To assess real-world impact, we compared the CNN model’s anomaly detection with the existing rule-based method. The confusion matrices highlight key improvements:
