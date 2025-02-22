@@ -29,14 +29,14 @@ The figure below showcases the model’s predicted traffic values against actual
 
 ![tesx](https://github.com/ChibTheMan23/CNN-Anomaly-Detection/blob/94b267cd4eac5a9cdf2c84f184fadb94b01ba14a/figures/Deep-AnT%20Predictions.png)
 
-### 📊 Confusion Matrices
+### Confusion Matrices
 To assess real-world impact, we compared the CNN model’s anomaly detection with the existing rule-based method. The confusion matrices highlight key improvements:
 
 - **True Positives (TP):** CNN detects **more anomalies** than the company model.
 - **False Negatives (FN):** CNN reduces missed anomalies, catching more critical events.
 - **False Positives (FP):** CNN significantly reduces unnecessary anomaly alerts.
 
-**📷 Placeholder: Insert Confusion Matrices for CNN and Company Model Here**
+[Confusin Metrices](https://github.com/ChibTheMan23/CNN-Anomaly-Detection/blob/81c7f338bc6d9f38479fe6f34d0865fa099acccf/figures/Confusion%20Metrices.png)
 
 ## 🛠️ Attention Mechanism: Hypothesis & Results
 
